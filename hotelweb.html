@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Vhisranta</title>
+</head>
+
+<body>
+    <header>
+        <!--menubar-->
+        <div class="fa-solid fa-bars" id="menu-bar"></div>
+        <a class="logo"><span>Vish</span>ranta </a>
+        <p class="tag">Find your next stay</p>
+        <nav class="navbar">
+            <a href="hotelweb.html"><i class="fa-solid fa-house"></i>
+                <p class="navicon">home</p>
+            </a>
+            <a href="About.html"><i class="fa-regular fa-address-card"></i>
+                <p class="navicon">about</p>
+            </a>
+            <a href="#services"><i class="fa-solid fa-bell-concierge"></i>
+                <p class="navicon">services</p>
+            </a>
+            <a href="#section-plans"><i class="fa-solid fa-cubes"></i>
+                <p class="navicon">packages</p>
+            </a>
+            <a href="book.html"><i class="fa-solid fa-clipboard"></i>
+                <p class="navicon">book</p>
+            </a>
+            
+        </nav>
+
+        <div class="icons">
+           <!-- <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>-->
+            <i class="fa-solid fa-user" id="login"></i>
+        </div>
+
+        <form action="" class="search-bar">
+            <input type="search" id="search" placeholder="search here.....">
+            <label for="search" class="fa-solid fa-magnifying-glass"></label>
+        </form>
+    </header>
+
+    <!--login form-->
+    <div class="login-form">
+        <i class="fa-solid fa-xmark" id="close-btn"></i>
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <p>don't have an account?<a href="registation.html">Resgister here</a></p>
+        </form>
+    </div>
+
+    <div class="menulist">
+        <ul>
+            <li> <a href="#home"><i class="fa-solid fa-house"></i>
+                    <p class="navicon">home</p>
+                </a></li>
+            <li><a href="About.html"><i class="fa-regular fa-address-card"></i>
+                    <p class="navicon">about</p>
+                </a></li>
+            <li> <a href="#services"><i class="fa-solid fa-bell-concierge"></i>
+                    <p class="navicon">services</p>
+                </a></li>
+            <li><a href="#section-plans"><i class="fa-solid fa-cubes"></i>
+                    <p class="navicon">packages</p>
+                </a></li>
+            <li><a href="book.html"><i class="fa-solid fa-clipboard"></i>
+                    <p class="navicon">book</p>
+                    </a></li>
+                
+        </ul>
+    </div>
+
+    <!--home page-->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Welcome to the world of luxury</h3>
+            <p>You decide your destination room is on us</p>
+            
+        </div>
+
+        <div class="video-container">
+            <video autoplay muted src="vid1.mp4" class="box1" id="box1"></video>
+            <video autoplay muted src="vid2.mp4" class="box2" id="box2"></video>
+            <video autoplay muted src="vid3.mp4" class="box3" id="box3"></video>
+            <video autoplay muted src="vid4.mp4" class="box4" id="box4"></video>
+        </div>
+
+    </section>
+    <section class="availability" id="availability">
+
+      <form action="" method="post">
+         <div class="flex">
+            <div class="box">
+               <p>check in <span></span></p>
+               <input type="date" name="check_in" class="input" required>
+            </div>
+            <div class="box">
+               <p>check out <span></span></p>
+               <input type="date" name="check_out" class="input" required>
+            </div>
+            <div class="box">
+               <p>adults <span></span></p>
+               <select name="adults" class="input" required>
+                  <option value="1">1 adult</option>
+                  <option value="2">2 adults</option>
+                  <option value="3">3 adults</option>
+                  <option value="4">4 adults</option>
+                  <option value="5">5 adults</option>
+                  <option value="6">6 adults</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>childs <span></span></p>
+               <select name="childs" class="input" required>
+                  <option value="-">0 child</option>
+                  <option value="1">1 child</option>
+                  <option value="2">2 childs</option>
+                  <option value="3">3 childs</option>
+                  <option value="4">4 childs</option>
+                  <option value="5">5 childs</option>
+                  <option value="6">6 childs</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>rooms <span></span></p>
+               <select name="rooms" class="input" required>
+                  <option value="1">1 room</option>
+                  <option value="2">2 rooms</option>
+                  <option value="3">3 rooms</option>
+                  <option value="4">4 rooms</option>
+                  <option value="5">5 rooms</option>
+                  <option value="6">6 rooms</option>
+               </select>
+            </div>
+         </div>
+         <input type="submit" value="check availability" name="check" class="btn">
+      </form>
+   
+   </section>
+   
+    <div class="services" id="services">
+        <h1 class="heading1">
+            <span>Services</span>
+            
+        </h1>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              
+              <img src="rooms.jpg" style="width:100%">
+              <div class="text">Luxury Rooms</div>
+            </div>
+            <div class="mySlides fade">
+              
+              <img src="food.jpg" style="width:100%">
+              <div class="text">Food & Drinks</div>
+            </div>
+            
+            <div class="mySlides fade">
+                            <img src="beach.jpg" style="width:100%">
+              <div class="text">Beach View</div>
+            </div>
+            <div class="mySlides fade">
+              
+              <img src="wifi1.jpg" style="width:100%">
+              <div class="text">Free wifi</div>
+            </div>
+            
+            <div class="mySlides fade">
+                            <img src="swim.jpg" style="width:100%">
+              <div class="text">Swimming Poll</div>
+            </div>
+            <div class="mySlides fade">
+              
+              <img src="call.jpg" style="width:100%">
+              <div class="text">24*7 Call Services</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+        </div>
+
+        <!--pack-->
+        <section class="section-plans" id="section-plans">
+            <div class="u-center-text u-margin-bottom-big">
+              <h2 class="heading-secondary">
+                Packges
+              </h2>
+            </div>
+      
+            <div class="row">
+              <div class="col-1-of-3">
+                <div class="card">
+                  <div class="card__side card__side--front-1">
+                    <div class="card__title card__title--1">
+                      <i class="fas fa-paper-plane"></i>
+                      <h4 class="card__heading" id="hed1">Basic</h4>
+                    </div>
+      
+                    <div class="card__details">
+                      <ul>
+                        <li>Single Bed</li>
+                        <li>One Time Free Brakefast</li>
+                        <li>Attached Bathroom</li>
+                        <li>24*7 Food Service</li>
+                        <li>24*7 Call Service</li>
+                        <li>One time pay wifi</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card__side card__side--back card__side--back-1">
+                    <div class="card__cta">
+                      <div class="card__price-box">
+                        <p class="card__price-only">Only</p>
+                        <p class="card__price-value">Rs:599</p>
+                      </div>
+                      <a href="basic.html" class="btn btn--white">Select</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-1-of-3">
+                <div class="card">
+                  <div class="card__side card__side--front-2">
+                    <div class="card__title card__title--2">
+                      <i class="fas fa-plane"></i>
+                      <h4 class="card__heading">Plus</h4>
+                    </div>
+      
+                    <div class="card__details">
+                      <ul>
+                        <li>Single Bed</li>
+                        <li>Free Brakefast</li>
+                        <li>24*7 Food Service</li>
+                        <li>24*7 Call Service</li>
+                        <li>Free Swimming poll access </li>
+                        <li>Free wifi</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card__side card__side--back card__side--back-2">
+                    <div class="card__cta">
+                      <div class="card__price-box">
+                        <p class="card__price-only">Only</p>
+                        <p class="card__price-value">Rs:999</p>
+                      </div>
+                      <a href="advance.html" class="btn btn--white">Select</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col-1-of-3">
+                <div class="card">
+                  <div class="card__side card__side--front-3">
+                    <div class="card__title card__title--3">
+                      <i class="fas fa-rocket"></i>
+                      <h4 class="card__heading">Pro</h4>
+                    </div>
+      
+                    <div class="card__details">
+                      <ul>
+                        <li>King Size Bed</li>
+                        <li>Exclusive Beach View</li>
+                        <li>Free Meal</li>
+                        <li>Attached Bathroom</li>
+                        <li>24*7 Food Service & Call Service</li>
+                        <li>Free Swimming poll & Wifi</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card__side card__side--back card__side--back-3">
+                    <div class="card__cta">
+                      <div class="card__price-box">
+                        <p class="card__price-only">Only</p>
+                        <p class="card__price-value">Rs:1999</p>
+                      </div>
+                      <a href="primeum.html" class="btn btn--white">Select</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="u-center-text u-margin-top-huge">
+              <a href="book.html" class="btn btn--green">Get Started</a>
+            </div>
+          </section>
+  <!--booking-->
+  <div class="book" id="book">
+        <h1 class="heading">
+           <span>Book Now</span>
+          
+        </h1>
+        <div class="row1">
+            <div class="img">
+                <img src="booking.png" alt="">
+            </div>
+       
+        <form action="">
+            <div class="input-box">
+                <h3>Where to</h3>
+                <input type="text" name="" id="" placeholder="Place name">
+            </div>
+            <div class="input-box">
+                <h3>How many</h3>
+                <input type="number" name="" id="" placeholder="Number of guests">
+            </div>
+            <div class="input-box">
+                <h3>arrivals</h3>
+                <input type="date">
+            </div>
+            <div class="input-box">
+                <h3>Packages</h3>
+                <select name="Package" class="input-box">
+                    <option value="1">Basic</option>
+                    <option value="2">Advance</option>
+                    <option value="3">Primeum</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <h3>Leaving</h3>
+                <input type="date">
+            </div>
+            <input type="submit" value="Book" name="booking" class="btn">
+        </form>
+    </div>
+
+</div>
+
+<!--contac-->
+
+<div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Mumbai, Maharastra</div>
+          <div class="text-two">Birendranagar 06</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+0098 9893 5647</div>
+          <div class="text-two">+0096 3434 5678</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">Vishranta@gmail.com</div>
+          <div class="text-two">info.Vishranta@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+       
+      <form action="">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your email">
+        </div>
+        <div class="input-box message-box">
+            <textarea class="message formEntry" placeholder="Message"></textarea>
+        </div>
+        <div class="button">
+          <input type="button" value="Send Now" >
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#"><i class="fas fa-arrow-right"></i>Home</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>About</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>Services</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>Review</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>Packages</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>Contact</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"><i class="fas fa-arrow-right"></i>my booking</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>my favorite</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>my wishlist</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>my account</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>terms or use</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for lastest update</p>
+            <form action="">
+                <input type="email" placeholder="enter your email address">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+            <img decoding="async" src="img/payment.png" class="payments" alt="">
+        </div>
+    </div>
+</section>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/671857d763.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
